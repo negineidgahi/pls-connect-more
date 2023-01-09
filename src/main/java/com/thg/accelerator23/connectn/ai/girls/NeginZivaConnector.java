@@ -17,7 +17,10 @@ public class NeginZivaConnector extends Player {
   public int makeMove(Board board) {
     //TODO: some crazy analysis
     //TODO: make sure said analysis uses less than 2G of heap and returns within 10 seconds on whichever machine is running it
+    Random rand = new Random();
+    int upperbound = 10;
+    int int_random = rand.nextInt(upperbound);
 
-    return 4;
+    return int_random;
   }
 }
